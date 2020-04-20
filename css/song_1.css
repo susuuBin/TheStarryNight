@@ -5,7 +5,7 @@
   width: 100%;
   height: 100%;
   content: "";
-  background: url("images/song.jpg");
+  background: url("../images/song.jpg");
   position: absolute;
   top: 0;
   left: 0;
