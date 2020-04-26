@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+body {
+    background-color: #54626B;
+    overflow: hidden;
+}
+
+div {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 640px) {
+    body {
+        background: url('../images/goartgallery.png') no-repeat center center fixed;
+        background-size: cover;
+        text-align: center;
+    }
+
+    div {
+        visibility: visible;
+    }
+
+    #bg {
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        position: absolute;
+        visibility: hidden;
+    }
+
+    #ask {
+        background-color: rgba(36, 36, 36, 0.8);
+        border-radius: 1vw;
+        padding: 1vw;
+        width: 75vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15vh;
+    }
+
+    #ask img {
+        width: 70vw;
+    }
+
+.light {
+    position: absolute;
+    left: 147px;
+    top: 110.6px;
+    width: 6px;
+    height: 12px;
+}
+.light2 {
+    position: absolute;
+    left: 178px;
+    top: 125.5px;
+    width: 6px;
+    height: 14px;
+}
+    
+}
