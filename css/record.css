@@ -11,7 +11,7 @@ div {
 
 @media only screen and (max-width: 640px) {
     body {
-        background: url('../images/clothes/bg.png') no-repeat center center fixed;
+        background: url('../images/record/bg.jpg') no-repeat center center fixed;
         background-size: cover;
         text-align: center;
     }
@@ -21,7 +21,7 @@ div {
     }
 
     #bg {
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color:#54626B;
         width: 100%;
         height: 100%;
         z-index: -10;
@@ -49,7 +49,7 @@ div {
 
     .fooDiv {
         display: inline-block;
-        background-color: rgba(255, 255, 255, 0.7);
+        background-color: #A6ABB1;
         width: 36vw;
         margin: 1vw;
         border-radius: 1.5vw;
@@ -61,18 +61,40 @@ div {
 
     .foo img {
         padding: 2vw;
+        height: 8vh;
+        max-width: 30vw;
+    }
+
+    #answer-img1, #answer-img2, #answer-img3, #answer-img4 {
         height: 10vh;
         max-width: 34vw;
+        animation: scaleBounce .3s alternate infinite;
+    }
+
+    #answer-img1:hover, #answer-img2:hover, #answer-img3:hover, #answer-img4:hover {
+        animation-play-state: paused;
+    }
+
+    @keyframes scaleBounce{
+        from {transform:scale(.7)}
+        to {transform:scale(1.0)}
     }
 
     .box {
         margin-top: -15vh;
+        margin-left: 30vw;
         width: 100%;
         position: fixed;
         z-index: -30;
+        animation: swing ease-in-out 1s infinite alternate;
     }
     
     .box img {
-        width: 20vw;
+        width: 40vw;
+    }
+
+    @keyframes swing {
+        0% { transform: rotate(5deg); }
+        100% { transform: rotate(-5deg); }
     }
 }
