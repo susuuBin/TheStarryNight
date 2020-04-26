@@ -57,5 +57,33 @@ div {
     width: 6px;
     height: 14px;
 }
+.light3 {
+    position: absolute;
+    left: 187.5px;
+    top: 168px;
+    width: 6px;
+    height: 14px;
+}
+.light4 {
+    position: absolute;
+    left: 178px;
+    top: 169px;
+    width: 5px;
+    height: 13px;
+}
+.light5 {
+    position: absolute;
+    left: 159px;
+    top: 148px;
+    width: 5px;
+    height: 15px;
+}
+.light6 {
+    position: absolute;
+    left: 60.5px;
+    top: 164px;
+    width: 6px;
+    height: 11px;
+}
     
 }
