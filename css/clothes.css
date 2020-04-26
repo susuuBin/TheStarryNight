@@ -1,5 +1,15 @@
 @charset "utf-8";
 
+@keyframes rotate_clothes1 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(359deg); }
+}
+
+@keyframes rotate_clothes2 {
+    0% { transform: rotate(359deg); }
+    100% { transform: rotate(0deg); }
+}
+
 body {
     background-color: #54626B;
     overflow: hidden;
@@ -11,9 +21,9 @@ div {
 
 @media only screen and (max-width: 640px) {
     body {
-        background: url('../images/clothes/bg.png') no-repeat center center fixed;
-        background-size: cover;
         text-align: center;
+        background: url('../images/clothes/bg.jpg') no-repeat center center fixed;
+        background-size: cover;
     }
 
     div {
@@ -21,10 +31,8 @@ div {
     }
 
     #bg {
-        background-color: rgba(255, 255, 255, 0.5);
-        width: 100%;
-        height: 100%;
-        z-index: -10;
+        background: url('../images/clothes/bg_white.png') no-repeat center center fixed;
+        background-size: cover;
         position: absolute;
         visibility: hidden;
     }
@@ -74,5 +82,38 @@ div {
     
     .box img {
         width: 20vw;
+    }
+
+    .footer > img {
+        width: 32vw;
+        position: relative;
+        z-index: -40;
+    }
+
+    .footer #bg1 {
+        left: -12vw;
+        top: 20vh;
+        animation: rotate_clothes1 5s ease-in-out infinite;
+    }
+    .footer #bg2 {
+        left: -18vw;
+        top: 38vh;
+        animation: rotate_clothes2 10s ease-in-out infinite;
+    }
+    .footer #bg3 {
+        left: -30vw;
+        top: 16vh;
+        animation: rotate_clothes1 9s ease-in-out infinite;
+    }
+    .footer #bg4 {
+        width: 28vw;
+        left: 65vw;
+        top: 4vh;
+        animation: rotate_clothes2 7s ease-in-out infinite;
+    }
+    .footer #bg5 {
+        left: 40vw;
+        top: -20vh;
+        animation: rotate_clothes1 6s ease-in-out infinite;
     }
 }

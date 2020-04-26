@@ -4,4 +4,4 @@ function openQuest() {
     document.getElementById('askImg').src = "images/clothes/ask_on.png";
 }
 
-window.setTimeout(openQuest(), 3000);
+window.setTimeout(openQuest(), 5000);
