@@ -1,20 +1,19 @@
-var imgArray = new Array();
-        imgArray[0] = "images/light/light.png";
+var imgArray1 = new Array();
+        imgArray1[0] = "images/light/light.png";
 
- 
         function showImage() {
-            var imgNum = Math.round(Math.random()*2);
-            var objImg = document.getElementById("light1");
-            objImg.src = imgArray[imgNum];
-            setTimeout("showImage()", 1000);
+            var objImg1 = document.getElementById("light1");
+            objImg1.src = imgArray1[0];
         }
-var imgArray = new Array();
-        imgArray[0] = "images/light/light1.png";
 
+        window.setTimeout(showImage(), 10000);
+
+var imgArray2 = new Array();
+        imgArray2[0] = "images/light/light1.png";
  
-        function showImage() {
-            var imgNum = Math.round(Math.random()*2);
-            var objImg = document.getElementById("light2");
-            objImg.src = imgArray[imgNum];
-            setTimeout("showImage()", 1000);
+        function showImage2() {
+            var objImg2 = document.getElementById("light2");
+            objImg2.src = imgArray2[0];
         }
+
+        window.setTimeout(showImage2(), 10000);

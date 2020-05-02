@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+@font-face { font-family: '국립박물관문화재단클래식B'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+body {
+    background-color: #54626B;
+    overflow: hidden;
+}
+
+div {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 640px) {
+    body {
+        background: url('../images/result/bg.png') no-repeat center center fixed;
+        background-size: cover;
+        overflow: auto;
+    }
+
+    div {
+        visibility: visible;
+    }
+}

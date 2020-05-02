@@ -11,7 +11,7 @@ div {
 
 @media only screen and (max-width: 640px) {
     body {
-        background: url('../images/goartgallery.png') no-repeat center center fixed;
+        background: url('../images/goArt/bg.png') no-repeat center center fixed;
         background-size: cover;
         text-align: center;
     }
