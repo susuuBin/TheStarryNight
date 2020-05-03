@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/result.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
@@ -10,20 +10,30 @@
     <title>The Starry Night</title>
 </head>
 <body>
-    <div>
+    <div class="frame">
         <img src="images/result/frame.png" alt="frame">
-        <img src="images/result/artistPic/INFP_VanGogh.png" alt="artist picture">
+        <img src="images/result/artistPic/INFP_VanGogh.png" alt="artist picture" id="artistPic">
     </div>
-    <img src="images/result/artistName/INFP_VanGogh.png" alt="artist name">
-    고독은 캔버스에 덧칠한 유화물감처럼 두껍고 딱딱하다.
+    <div class="header">
+        <img src="images/result/artistName/INFP_VanGogh.png" alt="artist name"><br>
+        고독은 캔버스에 덧칠한 유화물감처럼 두껍고 딱딱하다.
+    </div>
 
-    항상 말 없이 다정하고 온화한 당신은 마치 양털과 같은 보드라운 속마음을 가지고 있군요. 하지만 상대방을 잘 알게 될 때까지 따뜻함을 잘 드러내지 않는 편이에요.
+    <div id="detail">
+        항상 말 없이 다정하고 온화한 당신은 마치 양털과 같은 보드라운 속마음을 가지고 있군요. 하지만 상대방을 잘 알게 될 때까지 따뜻함을 잘 드러내지 않는 편이에요.
+    </div>
 
-    영감의 친구
-    산드로 보티첼리
+    <div class="footer">
+        <div class="inspiration">
+            영감의 친구<br>
+            <span id="frname">산드로 보티첼리</span>
+        </div>
 
-    화가의 작품 보러가기 →
-    <img src="images/result/qr/INFP_VanGogh.jpg" alt="qr code">
+        <div class="etc">
+            <div id="etc_comment">화가의 작품<br> 보러가기<br> →</div>
+            <img src="images/result/qr/INFP_VanGogh.jpg" alt="qr code" id="qrImg">
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
