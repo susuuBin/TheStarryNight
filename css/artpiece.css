@@ -1,55 +1,98 @@
-.bg {
-    background-image: url(../images/ap/bg.png);
-    opacity: 1;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0;
+@charset "utf-8";
+
+body {
+    background-color: #54626B;
+    overflow: hidden;
 }
 
-.q3 {
-    font-size: 46px;
-    position: absolute;
-    top: 22%;
-    right: 4%;
-    height: 130px;
-    width: 900px;
-    display: flex;
-    align-items: center;
-    background-color: hsla(0,0%,100%,0.4);
-    border-radius: 23px;
+div {
+    visibility: hidden;
 }
 
-.ap {
-    margin: 0;
-}
+@media only screen and (max-width: 640px) {
+    body {
+        background: url('../images/ap/bg.jpg') no-repeat center center fixed;
+        background-size: cover;
+        text-align: center;
+    }
 
-#frame {
-    position: relative;
-    left: 200px;
-    top: 150px;
-}
+    div {
+        visibility: visible;
+    }
 
-#lamp_left {
-    position: relative;
-    right: 790px;
-    top: 130px;
-}
+    #bg {
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        position: absolute;
+        visibility: hidden;
+    }
 
-#lamp_right {
-    position: relative;
-    left: 990px;
-    bottom: 210px;
-}
+    #ask {
+        background-color: rgba(125, 139, 148, 0.8);
+        border-radius: 1vw;
+        padding: 1vw;
+        width: 75vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15vh;
+    }
 
-#picture_1 {
-    position: relative;
-    right: 50px;
-    top: 700px;
-}
+    #ask img {
+        width: 70vw;
+    }
 
-#picture_2 {
-    position: relative;
-    left: 590px;
-    bottom: 40px;
+    .foo{
+        margin-top: 8vh;
+    }
+
+    .foo img {
+        padding: 2vw;
+        max-height: 20vh;
+        max-width: 53vw;
+        border-radius: 10%;
+        position: static;
+    }
+
+    .box {
+        margin-top: -100vh;
+        width: 100%;
+        position: fixed;
+        z-index: -30;
+    }
+
+    .box #lamp_l {
+        float: left;
+        width: 20vw;
+        height: auto;
+    }
+
+    .box #lamp_r {
+        float: right;
+        width: 20vw;
+        height: auto;
+    }
+
+    .box #bg_1 {
+        width: 60vw;
+        height: auto;
+    }
+
+    .bag {
+        width: 50vw;
+        position: relative;
+        z-index: -40;
+    }
+
+    .bag #bg_2 {
+        left: -12vw;
+        top: 20vh;
+    }
+
+    .bag #bg_3 {
+        width: 28vw;
+        left: 65vw;
+        top: 4vh;
+    }
 }
